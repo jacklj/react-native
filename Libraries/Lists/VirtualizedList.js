@@ -864,7 +864,7 @@ class VirtualizedList extends React.PureComponent<Props, State> {
       _keylessItemComponentName = '';
       const spacerKey = !horizontal ? 'height' : 'width';
       const lastInitialIndex = this.props.initialScrollIndex
-        ? -1
+        ? 0
         : this.props.initialNumToRender - 1;
       const {first, last} = this.state;
       this._pushCells(
